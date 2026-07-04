@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HW Формы</title>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<form class="form">
+			<fieldset class="fieldset">
+				<legend class="legend">Заявление</legend>
+				<label class="label"> Ф.И.О. </label>
+				<input
+					class="field"
+					type="text"
+					name="name"
+					placeholder="Введите имя"
+					required
+				/>
+				<label class="label"> Возраст </label>
+				<input
+					class="field"
+					type="number"
+					inputmode="numeric"
+					name="age"
+					placeholder="Введите возраст"
+					required
+				/>
+				<label class="label"> Телефон </label>
+				<input
+					class="field"
+					type="tel"
+					inputmode="tel"
+					name="phone"
+					placeholder="Введите телефон"
+					required
+				/>
+				<label class="label"> Почта </label>
+				<input
+					class="field"
+					type="email"
+					inputmode="email"
+					name="mail"
+					placeholder="Введите email"
+					required
+				/>
+			</fieldset>
+			<fieldset class="fieldset">
+				<label class="label"> Сообщение </label>
+				<textarea
+					class="textarea"
+					name="message"
+					placeholder="Текст сообщения"
+					required
+				></textarea>
+				<label class="label checkbox-label">
+					<input class="checkbox" type="checkbox" name="checkbox" required />
+					<span class="checkbox-text">
+						С правилами и политикой конфиденциальности ознакомлен
+					</span>
+				</label>
+			</fieldset>
+			<button class="button">Отправить</button>
+		</form>
+	</body>
+</html>
