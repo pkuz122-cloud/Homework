@@ -12,9 +12,9 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+	/* -webkit-box-align: center; */
+	/* -ms-flex-align: center; */
+	/* align-items: center; */
 	gap: 28px;
 }
 
@@ -35,6 +35,7 @@
 
 .hero-info {
 	max-width: 492px;
+	flex-shrink: 0;
 }
 
 .hero-info .text {
@@ -47,6 +48,7 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	/* min-width: 0; */
 }
 
 .hero-choose {
@@ -82,6 +84,7 @@
 	background-color: #fff;
 	border: 1px solid #d3cbd9;
 	overflow: hidden;
+	flex: 1 1 25%;
 }
 
 .news-article img {
